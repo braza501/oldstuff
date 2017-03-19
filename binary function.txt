@@ -1,0 +1,19 @@
+// constructing bitsets
+#include <iostream>       // std::cout
+#include <string>         // std::string
+#include <bitset>         // std::bitset
+
+void bin(int number){
+	if(number == 1){
+		std::cout<<1;
+		return;
+	}
+	bin(number/2);
+	std::cout<<number%2;
+}
+
+int main ()
+{
+ 	bin(15);
+	return 0;
+}
